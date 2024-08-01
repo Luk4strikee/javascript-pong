@@ -44,3 +44,23 @@ function Borda(){
         yvelocidadeBolinha *= -1;
     }
 }
+
+function criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
+    fill("blue");
+    rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
+}
+
+function movimentaRaquete(){
+if(keyIsDown(UP_ARROW)){
+    yRaquete -= 10;
+}
+if(keyIsDown(DOWN_ARROW)){
+    yRaquete += 10;
+}
+}
+
+function colideRaquete(){
+    if(xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+        xvelocidadeBolinha *=-1;
+    }
+}
