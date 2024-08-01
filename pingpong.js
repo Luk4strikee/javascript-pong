@@ -36,6 +36,7 @@ function draw(){
 
 //função bolinha
 function criaBolinha(xBolinha, yBolinha,tamBolinha){
+    fill("red")
     circle (xBolinha,yBolinha,tamBolinha);
 }
 
