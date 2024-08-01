@@ -29,7 +29,7 @@ function draw(){
     moveBolinha();
     //chamando a borda
     Borda();
-    criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaraquete);
+    criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
     movimentaRaquete();
     colideRaquete();
 }
@@ -73,7 +73,7 @@ if(keyIsDown(DOWN_ARROW)){
 
 function colideRaquete(){
     if(xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
-        
+
         xvelocidadeBolinha *=-1;
     }
 }
