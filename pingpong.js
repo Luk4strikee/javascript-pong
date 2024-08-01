@@ -2,10 +2,16 @@
 let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
+let raioBolinha = tamanhoBolinha/2;
 
 //config velocidade bolinha
 let xvelocidadeBolinha = 6;
 let yvelocidadeBolinha = 6;
+
+let xRaquete = 5;
+let yRaquete = 150;
+let larguraRaquete = 10;
+let alturaRaquete = 90;
 
 function setup(){
     //aqui vou criar minha "mesa"
