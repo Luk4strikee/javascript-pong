@@ -73,6 +73,7 @@ if(keyIsDown(DOWN_ARROW)){
 
 function colideRaquete(){
     if(xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+        
         xvelocidadeBolinha *=-1;
     }
 }
