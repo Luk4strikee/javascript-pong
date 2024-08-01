@@ -45,11 +45,13 @@ function Borda(){
     }
 }
 
+//função responsavel por criar o retangulo que representa a raquete
 function criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
     fill("blue");
     rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
 }
 
+//função responsavel por movimentar a raquete
 function movimentaRaquete(){
 if(keyIsDown(UP_ARROW)){
     yRaquete -= 10;
