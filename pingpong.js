@@ -2,7 +2,7 @@
 let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
-let raioBolinha = tamanhoBolinha/2;
+let raioBolinha = tamBolinha/2;
 
 //config velocidade bolinha
 let xvelocidadeBolinha = 6;
@@ -27,7 +27,7 @@ function draw(){
     criaBolinha(xBolinha, yBolinha, tamBolinha);
     //chamando a função mov bolinha
     moveBolinha();
-    //chamando a borda
+    //chamando a borda       
     Borda();
     criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
     movimentaRaquete();
